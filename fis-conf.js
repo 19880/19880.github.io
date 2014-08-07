@@ -3,3 +3,13 @@
 fis.config.set('modules.parser.less', 'less');
 //将less文件编译为css
 fis.config.set('roadmap.ext.less', 'css');
+
+fis.config.merge({
+    deploy : {
+    	local : {
+            //from参数省略，表示从发布后的根目录开始上传
+            //发布到当前项目的上一级的output目录中
+            to : '../iorelease'
+        }
+    }
+});
