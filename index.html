@@ -2,33 +2,59 @@
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <title>STANLEY19880</title>
+    <title>..:: STANLEY ::..</title>
     <link rel="stylesheet" href="/static/css/common.css"/>
+    <link rel="stylesheet" href="static/css/fullPage.css"/>
     <link rel="stylesheet" href="/static/css/style.css"/>
 </head>
 <body>
-    <header></header>
-    <footer></footer>
-    <div id="welcome">
-        <div id="hw">
-            <canvas id="hw_canvas" width="280" height="70"></canvas>
-            <label>Hello,world!</label>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li data-menuanchor="firstPage" class="step-1"><a href="#firstPage">Access to presentation</a></li>
+                <li data-menuanchor="secondPage" class="step-2"><a href="#secondPage">Access to front-end section</a></li>
+                <li data-menuanchor="3rdPage" class="step-3"><a href="#3rdPage">Access to webdesigner section</a></li>
+                <li data-menuanchor="4thpage" class="step-4"><a href="#4thpage">Access to contact section</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="fullpage">
+        <div class="section active" id="section0">
+            <div id="welcome">
+                <div id="hw">
+                    <canvas id="hw_canvas" width="280" height="70"></canvas>
+                    <label>Hello,world!</label>
+                </div>
+                <p id="p_im">I'M</p>
+                <p id="p_author">Stanley</p>
+                <p id="p_desc">PROGRAMMER AND DESIGNER</p>
+            </div>
+            <div id="draw">
+                <img src="/static/img/tree_01.png" data-0="left: 155px;" data-1000="left: -26px;"/>
+                <img src="/static/img/tree_02.png" data-0="left: 353.5px;" data-1000="left: 94px;"/>
+                <img src="/static/img/tree_04.png" data-0="left: 1047.5px;" data-1000="left: 1256.3px;"/>
+                <img src="/static/img/abr_03.png" data-0="left: 116.5px;" data-1000="left: -504.9px;"/>
+                <img src="/static/img/abr_01.png" data-0="left: 423.5px;" data-1000="left: 529.9px;"/>
+                <img src="/static/img/abr_02.png" data-0="left: 505.5px;" data-1000="left: 884.7px;"/>
+                <img src="/static/img/abr_04.png" data-0="left: 946.5px;" data-1000="left: 1877.7px;"/>
+                <img src="/static/img/tree_03.png" data-0="left: 916.5px;" data-1000="left: 1176px;"/>
+            </div>
         </div>
-        <p id="p_im">I'M</p>
-        <p id="p_author">Stanley</p>
-        <p id="p_desc">PROGRAMMER AND DESIGNER</p>
-    </div>
-    <div id="draw">
-        <img src="/static/img/tree_01.png" data-100="left: 155px; top: 509px;" data-1000="left: -26px; top: -291px;"/>
-        <img src="/static/img/tree_02.png" data-100="left: 353.5px; top: 556px;" data-1000="left: 94px; top: -244px;"/>
-        <img src="/static/img/tree_04.png" data-100="left: 1047.5px; top: 506px;" data-1000="left: 1256.3px; top: -294px;"/>
-        <img src="/static/img/abr_03.png" data-100="left: 116.5px; top: 575px;" data-1000="left: -504.9px; top: -225px; "/>
-        <img src="/static/img/abr_01.png" data-100="left: 423.5px; top: 612px;" data-1000="left: 529.9px; top: -188px;"/>
-        <img src="/static/img/abr_02.png" data-100="left: 505.5px; top: 535px;" data-1000="left: 884.7px; top: -265px; "/>
-        <img src="/static/img/abr_04.png" data-100="left: 946.5px; top: 532px;" data-1000="left: 1877.7px; top: -268px; "/>
-        <img src="/static/img/tree_03.png" data-100="left: 916.5px; top: 551px;" data-1000="left: 1176px; top: -249px;"/>
-    </div>
+        <div class="section" id="section1">
+            <div class="slide "><h1>Simple Demo</h1></div>
+            <div class="slide active"><h1>Only text</h1></div>
+            <div class="slide"><h1>And text</h1></div>
+            <div class="slide"><h1>And more text</h1></div>
+        </div>
+        <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+        <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+    </div>>
+
+    <footer></footer>
+
     <script type="application/javascript" src="/static/js/jquery.js"></script>
+    <script type="application/javascript" src="/static/js/jquery-ui.js"></script>
+    <script type="application/javascript" src="/static/js/fullPage.js"></script>
     <script type="application/javascript" src="/static/js/skrollr.js"></script>
     <script type="application/javascript" src="/static/js/all.js"></script>
 </body>
