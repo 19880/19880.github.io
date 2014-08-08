@@ -3,4 +3,37 @@
  */
  $(function(){
 	skrollr.init();
+
+     var canvas = document.getElementById("hw_canvas");
+     var ctx = canvas.getContext("2d");
+     draw(ctx);
+
+     function draw(ctx) {
+
+         ctx.save();
+         ctx.beginPath();
+
+         ctx.moveTo(0.0, 0.0);
+         ctx.lineTo(0.0, 56.0);
+         ctx.lineTo(130.0, 56.0);
+         ctx.lineTo(130.0, 69.7);
+         ctx.lineTo(150.8, 56.0);
+         ctx.lineTo(280.0, 56.0);
+         ctx.lineTo(280.0, 0.0);
+         ctx.lineTo(0.0, 0.0);
+         ctx.closePath();
+
+         ctx.moveTo(276.0, 52.0);
+         ctx.lineTo(149.6, 52.0);
+         ctx.lineTo(134.0, 62.3);
+         ctx.lineTo(134.0, 52.0);
+         ctx.lineTo(4.0, 52.0);
+         ctx.lineTo(4.0, 4.0);
+         ctx.lineTo(276.0, 4.0);
+         ctx.lineTo(276.0, 52.0);
+         ctx.closePath();
+         ctx.fillStyle = "#8C8C8C";
+         ctx.fill();
+         ctx.restore();
+     }
 });
