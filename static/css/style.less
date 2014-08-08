@@ -1,17 +1,20 @@
 body {
   height: 960px;
-  background: #959595 url("../img/back_myroom02.jpg") repeat-x center top;
   background-attachment: scroll;
+}
+#section0 {
+  background: #959595 url("../img/back_myroom02.jpg") repeat-x center top;
 }
 #draw {
    img {
-     position: fixed;
+     position: absolute;
+     bottom: 0;
    }
 }
 #welcome {
   position: relative;
   margin: 0 auto;
-  margin-top: 220px;
+  /*margin-top: 220px;*/
   width: 390px;
 
   #hw {
@@ -48,4 +51,10 @@ body {
     font-size: 15px;
     color: #A2A2A2;
   }
+}
+.section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

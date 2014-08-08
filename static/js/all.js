@@ -2,8 +2,6 @@
  * Created by zhengnaiguang on 2014/8/7.
  */
  $(function(){
-	skrollr.init();
-
      var canvas = document.getElementById("hw_canvas");
      var ctx = canvas.getContext("2d");
      draw(ctx);
@@ -36,4 +34,10 @@
          ctx.fill();
          ctx.restore();
      }
-});
+
+
+     skrollr.init();
+     $('#fullpage').fullpage({
+         autoScrolling: false
+     });
+ });
