@@ -2,6 +2,51 @@ body {
   height: 960px;
   background-attachment: scroll;
 }
+header {
+  position: fixed;
+  color: #fff;
+  height: 30px;
+  width: 100%;
+  z-index: 100;
+}
+nav {
+  ul {
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    right: 15px;
+  }
+
+  li {
+    margin: 0 .25em 0 0;
+    display: inline-block;
+    font-size: 1.1em;
+    line-height: 1;
+  }
+
+  a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    border: 3px solid #efefef;
+    text-indent: -999em;
+  }
+
+  .step-1 a {
+    background: white;
+  }
+  .step-2 a {
+    background: #3da3a2;
+  }
+  .step-3 a {
+    background: #eb713b;
+  }
+  .step-4 a {
+    background: #f2b636;
+  }
+}
+
 #section0 {
   background: #959595 url("../img/back_myroom02.jpg") repeat-x center top;
 }
