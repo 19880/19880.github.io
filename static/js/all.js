@@ -1,1 +1,1 @@
-$(function(){skrollr.init()});
+$(function(){function e(e){e.save(),e.beginPath(),e.moveTo(0,0),e.lineTo(0,56),e.lineTo(130,56),e.lineTo(130,69.7),e.lineTo(150.8,56),e.lineTo(280,56),e.lineTo(280,0),e.lineTo(0,0),e.closePath(),e.moveTo(276,52),e.lineTo(149.6,52),e.lineTo(134,62.3),e.lineTo(134,52),e.lineTo(4,52),e.lineTo(4,4),e.lineTo(276,4),e.lineTo(276,52),e.closePath(),e.fillStyle="#8C8C8C",e.fill(),e.restore()}skrollr.init();var o=document.getElementById("hw_canvas"),l=o.getContext("2d");e(l)});
