@@ -38,7 +38,7 @@
 
      skrollr.init();
      $('#fullpage').fullpage({
-         sectionsColor: ['#ffffff', '#3da3a2', '#eb713b', '#f2b636'],
+         sectionsColor: ['transparent', 'white', '#eb713b', '#f2b636'],
          anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
          menu: '#menu',
          continuousVertical: true,

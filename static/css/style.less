@@ -1,6 +1,5 @@
 body {
   height: 960px;
-  background-attachment: scroll;
 }
 header {
   position: fixed;
@@ -49,11 +48,13 @@ nav {
 
 #section0 {
   background: #959595 url("../img/back_myroom02.jpg") repeat-x center top;
+  background-attachment: scroll;
 }
 #draw {
    img {
      position: absolute;
      bottom: 0;
+     display: none;
    }
 }
 #welcome {
@@ -102,4 +103,35 @@ nav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.widget_skills{
+  width: 379px;
+
+  .skills_row {
+    margin-top: 1px;
+  }
+
+  .progress {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 20px;
+    padding-top: 7px;
+    text-align: left;
+    width: 0;
+  }
+  .caption {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0 0 0 12px;
+  }
+
+  .value {
+    color: #FFFFFF;
+    font-weight: 400;
+  }
 }
