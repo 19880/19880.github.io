@@ -37,7 +37,7 @@
 
 
      skrollr.init();
-     $('#fullpage').fullpage({
+     /*$('#fullpage').fullpage({
          sectionsColor: ['transparent', '#3da3a2', '#eb713b', '#f2b636'],
          anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
          menu: '#menu',
@@ -48,11 +48,12 @@
                 skills_anim();
             }
          }
-     });
+     });*/
      function skills_anim() {
          $('.widget_skills .skills_row .progress').each(function () {
              var val = $(this).find('.value').text();
              $(this).animate({'width': val}, 1000, 'easeInQuint');
          });
      }
+     skills_anim();
  });

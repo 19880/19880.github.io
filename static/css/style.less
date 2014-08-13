@@ -49,6 +49,8 @@ nav {
 #section0 {
   background: #959595 url("../img/back_myroom02.jpg") repeat-x center top;
   background-attachment: scroll;
+  height: 680px;
+  overflow: hidden;
 }
 #draw {
    img {
@@ -60,7 +62,7 @@ nav {
 #welcome {
   position: relative;
   margin: 0 auto;
-  /*margin-top: 220px;*/
+  margin-top: 180px;
   width: 390px;
 
   #hw {
@@ -105,6 +107,26 @@ nav {
   box-sizing: border-box;
 }
 
+#inter1 {
+  display: block;
+  background: url(../img/inter3__.jpg) no-repeat fixed center center;
+  background-size: auto;
+  padding: 100px 0;
+  text-align: center;
+
+  p {
+    display: inline-block;
+    color: white;
+    padding: 30px;
+    border: 6px solid white;
+    font-size: 60px;
+    line-height: 1.2em;
+    text-align: center;
+    text-shadow: 0 2px 2px #666;
+    letter-spacing: 8px;
+  }
+}
+
 .widget_skills{
   width: 359px;
 
@@ -140,29 +162,26 @@ nav {
 .section{
   .period_to {
     font-size: 38px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    border-left: 3px solid #FFFFFF;
+    padding:40px 0 20px;
     text-shadow: 0 1px 1px #888;
   }
   .section-content{
-    color:white;
     width: 1000px;
     margin: 0 auto;
   }
 
+  .resume_content{
+    color: rgb(102, 102, 102);
+  }
+
   article{
-    float: left;
-    width: 300px;
   }
   section{
-    padding-top: 80px;
-    margin-left: 320px;
   }
 }
 
-#section1 {
-  .resume_content{
-    color:rgb(154, 215, 214);
-  }
+.widget_skills {
+  float: left;
+  margin: 0 46px 20px 0;
+  width: 379px;
 }
