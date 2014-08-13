@@ -4,6 +4,15 @@ fis.config.set('modules.parser.less', 'less');
 //将less文件编译为css
 fis.config.set('roadmap.ext.less', 'css');
 
+fis.config.set('modules.postpackager', 'simple');
+fis.config.set('pack', {
+    'static/js/page.js': [
+        'static/js/jquery.easings.js',
+        'static/js/jquery.slimscroll.js',
+        'static/js/fullPage.js'
+    ]
+});
+
 fis.config.merge({
     deploy : {
     	local : {
