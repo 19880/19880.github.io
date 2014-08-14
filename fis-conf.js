@@ -13,6 +13,8 @@ fis.config.set('pack', {
     ]
 });
 
+fis.config.set('settings.optimizer.png-compressor.type', 'pngquant');
+
 fis.config.merge({
     deploy : {
     	local : {
