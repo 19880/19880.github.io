@@ -107,23 +107,24 @@ nav {
   box-sizing: border-box;
 }
 
-#inter1 {
+.parallax {
   display: block;
-  background: url(../img/label01.jpg) no-repeat fixed center center;
+  background: white no-repeat fixed center center;
   background-size: cover;
-  padding: 105px 0;
-  text-align: center;
+
+  p{
+    height: 220px;
+    text-align: center;
+    text-indent: -999em;
+    background: transparent no-repeat fixed center center;
+  }
+}
+
+#inter1 {
+  background-image: url(../img/label01.jpg);
 
   p {
-    display: inline-block;
-    color: white;
-    padding: 30px;
-    border: 6px solid white;
-    font-size: 60px;
-    line-height: 1.2em;
-    text-align: center;
-    text-shadow: 0 2px 2px #666;
-    letter-spacing: 8px;
+    background-image: url(../img/label01.png);
   }
 }
 
