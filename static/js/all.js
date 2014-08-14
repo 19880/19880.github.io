@@ -50,7 +50,7 @@
          }
      });*/
      function skills_anim() {
-         if($(document).scrollTop()>900) {
+         if($(document).scrollTop()>1000) {
              $('.widget_skills .skills_row .progress').each(function () {
                  var val = $(this).find('.value').text();
                  $(this).animate({'width': val}, 1000, 'easeInQuint');
