@@ -1,4 +1,5 @@
 @import 'my_mixin.less';
+@linkHoverColor:#00a1ea;
 
 body,
 ul,
@@ -28,11 +29,18 @@ img {
   border: 0 none;
 }
 a {
-  color: #FF6C00;
+  color: #383838;
   text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 a:hover {
-  color: #CC4500;
+  color: @linkHoverColor;
+  border-color: @linkHoverColor;
 }
 :-moz-placeholder {
   color: #ababac;

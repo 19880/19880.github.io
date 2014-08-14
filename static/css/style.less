@@ -1,3 +1,5 @@
+@import 'common.less';
+
 body {
   height: 960px;
   background-color: #F3F1F1;
@@ -113,6 +115,7 @@ nav {
   background: white no-repeat fixed center center;
   background-size: cover;
   height: 220px;
+  margin: 40px 0;
   text-align: center;
 
   p{
@@ -188,11 +191,6 @@ nav {
   .resume_content{
     color: rgb(102, 102, 102);
   }
-
-  article{
-  }
-  section{
-  }
 }
 
 .widget_skills {
@@ -202,4 +200,42 @@ nav {
 }
 .widget_title{
   color:#606060;
+}
+
+.widget_work{
+  .widget_inner {
+     float: left;
+    width: 300px;
+  }
+  .widget_modal{
+    margin-left: 380px;
+  }
+
+  h6{
+    color: #999;
+    font-size: 13px;
+    margin: 4px 0 8px;
+  }
+  p{
+    color:#222;
+    line-height: 2;
+    color: rgb(102, 102, 102);
+    margin-bottom: 30px;
+  }
+
+  .button{
+    display: inline-block;
+    padding:12px 28px;
+    border: 1px solid #999;
+    border-radius: 1000px;
+    color:#999;
+    font-size: 14px;
+
+    &:hover{
+      color: #fff;
+      background-color: @linkHoverColor;
+      border-color: @linkHoverColor;
+      transition: background-color 300ms ease-out;
+    }
+  }
 }
