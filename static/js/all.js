@@ -50,10 +50,15 @@
          }
      });*/
      function skills_anim() {
-         $('.widget_skills .skills_row .progress').each(function () {
-             var val = $(this).find('.value').text();
-             $(this).animate({'width': val}, 1000, 'easeInQuint');
-         });
+         if($(document).scrollTop()>900) {
+             $('.widget_skills .skills_row .progress').each(function () {
+                 var val = $(this).find('.value').text();
+                 $(this).animate({'width': val}, 1000, 'easeInQuint');
+             });
+             $(window).unbind('.skills_anim');
+         }
      }
-     skills_anim();
+     $(window).bind('load.skills_anim scroll.skills_anim', function(){
+         skills_anim();
+     });
  });
