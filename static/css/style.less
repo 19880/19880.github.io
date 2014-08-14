@@ -1,5 +1,6 @@
 body {
   height: 960px;
+  background-color: #F3F1F1;
 }
 header {
   position: fixed;
@@ -111,23 +112,35 @@ nav {
   display: block;
   background: white no-repeat fixed center center;
   background-size: cover;
+  height: 220px;
+  text-align: center;
 
   p{
-    height: 220px;
-    text-align: center;
-    text-indent: -999em;
-    background: transparent no-repeat fixed center center;
+    display: inline-block;
+    font-size: 48px;
+    color:white;
+    text-shadow: 0 2px 2px #666;
+    border:6px solid white;
+    padding: 10px 30px;
+    margin-top: 70px;
   }
 }
 
 #inter1 {
   background-image: url(../img/label01.jpg);
 
-  p {
+  /*p {
+    background: transparent no-repeat center center;
     background-image: url(../img/label01.png);
-  }
+  }*/
+}
+#inter2 {
+  background-image: url(../img/label02.jpg);
 }
 
+#resume_skills {
+  margin-top: 30px;
+}
 .widget_skills{
   width: 359px;
 
@@ -162,6 +175,7 @@ nav {
 }
 .section{
   .period_to {
+    color:#606060;
     font-size: 38px;
     padding:40px 0 20px;
     text-shadow: 0 1px 1px #888;
@@ -185,4 +199,7 @@ nav {
   float: left;
   margin: 0 46px 20px 0;
   width: 379px;
+}
+.widget_title{
+  color:#606060;
 }
