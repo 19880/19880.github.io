@@ -36,7 +36,9 @@
      }
 
 
-     skrollr.init();
+     skrollr.init({
+         forceHeight: false
+     });
      /*$('#fullpage').fullpage({
          sectionsColor: ['transparent', '#3da3a2', '#eb713b', '#f2b636'],
          anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
