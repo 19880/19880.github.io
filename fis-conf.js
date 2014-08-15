@@ -5,14 +5,22 @@ fis.config.set('modules.parser.less', 'less');
 fis.config.set('roadmap.ext.less', 'css');
 
 fis.config.set('modules.postpackager', 'simple');
-fis.config.set('pack', {
+/*fis.config.set('pack', {
     'static/js/page.js': [
         'static/js/jquery.easings.js',
         'static/js/jquery.slimscroll.js',
         'static/js/fullPage.js'
     ]
-});
+});*/
 
+//csssprite
+fis.config.set('roadmap.path', [{
+    reg: '**.less',
+    useSprite: true
+}]);
+fis.config.set('settings.spriter.csssprites.margin', 20);
+
+// PNG8
 fis.config.set('settings.optimizer.png-compressor.type', 'pngquant');
 
 fis.config.merge({
@@ -20,7 +28,8 @@ fis.config.merge({
     	local : {
             //from参数省略，表示从发布后的根目录开始上传
             //发布到当前项目的上一级的output目录中
-            to : '../iorelease'
+            to : '../iorelease',
+            exclude : '**.psd'
         }
     }
 });
